@@ -1,0 +1,3 @@
+User prefers hands-off setup and direct execution over lengthy explanations. They provide API keys after initial setup and want services installed first. They expect me to check AgentMail inbox herme-khuchinque@agentmail.to for instructions/documents and learn from them by creating skills. They are technically sophisticated, using multiple integrations (AnySearch, AgentMail, MCP servers). They want me to proactively use provided credentials/email access.
+§
+User values blunt, unfiltered honesty in assessments ("90 percent honesty" requests) — they responded positively to a direct critique of their setup, even when harsh. Deliver audits without hedging or sugar-coating; lead with the real root cause.
