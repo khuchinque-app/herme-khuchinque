@@ -1,0 +1,182 @@
+name: ChinQue
+description: Cyberpunk ChinQue Timeheist — neural interface Timetravel aesthetic with
+  vibrant Chronograph cyan, golden chronal energy, and white highlights
+colors:
+  banner_border: '#00BCD4'
+  banner_title: '#00E5FF'
+  banner_accent: '#FFD700'
+  banner_dim: '#1A3B47'
+  banner_text: '#FFD700'
+  ui_accent: '#00E5FF'
+  ui_label: '#FFD700'
+  ui_ok: '#69F0AE'
+  ui_error: '#FF1744'
+  ui_warn: '#FFC107'
+  prompt: '#E0F7FA'
+  input_rule: '#00796B'
+  response_border: '#FFD700'
+  status_bar_bg: '#002B36'
+  status_bar_text: '#B2DFDB'
+  status_bar_strong: '#00E5FF'
+  status_bar_dim: '#004D40'
+  status_bar_good: '#69F0AE'
+  status_bar_warn: '#FFC107'
+  status_bar_bad: '#FFD700'
+  status_bar_critical: '#FF1744'
+  voice_status_bg: '#002B36'
+  completion_menu_bg: '#001E24'
+  completion_menu_current_bg: '#00838F'
+  completion_menu_meta_bg: '#00251A'
+  completion_menu_meta_current_bg: '#00ACC1'
+  session_label: '#FFD700'
+  session_border: '#004D40'
+  selection_bg: '#00494F'
+  shell_dollar: '#00E5FF'
+  ui_hint: '#00B8D4'
+spinner:
+  wings:
+    - - ⟪┆
+      - ┆⟫
+    - - ⟪╻
+      - ╻⟫
+    - - ⟪┃
+      - ┃⟫
+    - - ⟪╹
+      - ╹⟫
+  waiting_faces:
+    - (┆)
+    - (╻)
+    - (┃)
+    - (╹)
+    - (⋮)
+  thinking_faces:
+    - (┆)
+    - (╻)
+    - (┃)
+    - (╹)
+    - (⋮)
+  thinking_verbs:
+    - rewinding the timeline
+    - consulting the Chronokeeper
+    - i've been here before?
+    - calculating to steal optimal seconds
+    - shattering the past
+    - bending temporal loom and threads
+    - replaying the exact same moment
+    - reading the future outcome
+branding:
+  agent_name: Chinque Agent
+  welcome: '[bold #00897B]T[/][bold #028A7C]i[/][bold #038A7D]m[/][bold #058B7D]e[/][bold
+    #078C7E]l[/][bold #088D7F]i[/][bold #0A8D80]n[/][bold #0B8E81]e[/][bold #0D8F82]
+    [/][bold #0F9082]s[/][bold #109083]y[/][bold #129184]n[/][bold #149285]c[/][bold
+    #159286]h[/][bold #179386]r[/][bold #199487]o[/][bold #1A9588]n[/][bold #1C9589]i[/][bold
+    #1D968A]z[/][bold #1F978B]e[/][bold #21988B]d[/][bold #22988C].[/][bold #24998D]
+    [/][#279B8F]C[/][#2A9C90]h[/][#2D9E92]r[/][#309F93]o[/][#32A095]n[/][#35A296]o[/][#38A398]g[/][#3BA499]r[/][#3EA69B]a[/][#41A79C]p[/][#43A89E]h[/][#46A99F]
+    [/][#49ABA1]r[/][#4CACA2]e[/][#4FADA4]s[/][#52AFA5]o[/][#54B0A7]n[/][#57B1A8]a[/][#5AB3AA]n[/][#5DB4AB]t[/][#60B5AC].[/][#63B7AE]
+    [/][#66B8AF]C[/][#68B9B1]h[/][#6BBBB2]r[/][#6EBCB4]o[/][#71BDB5]n[/][#74BFB7]o[/][#77C0B8]-[/][#79C1BA]c[/][#7CC2BB]o[/][#7FC4BD]m[/][#82C5BE]m[/][#85C6C0]a[/][#88C8C1]n[/][#8AC9C3]d[/][#8DCAC4]
+    [/][#90CCC6]r[/][#93CDC7]e[/][#96CEC8]a[/][#99D0CA]d[/][#9CD1CB]y[/][#9ED2CD].[/][#A1D4CE]
+    [/][#A4D5D0]E[/][#A7D6D1]n[/][#AAD8D3]t[/][#ADD9D4]e[/][#AFDAD6]r[/][#B2DBD7]
+    [/][#B5DDD9]y[/][#B8DEDA]o[/][#BBDFDC]u[/][#BEE1DD]r[/][#C0E2DF] [/][#C3E3E0]p[/][#C6E5E2]a[/][#C9E6E3]r[/][#CCE7E4]a[/][#CFE9E6]d[/][#D2EAE7]o[/][#D4EBE9]x[/][#D7EDEA]
+    [/][#DAEEEC]o[/][#DDEFED]r[/][#E0F1EF] [/][#E3F2F0]t[/][#E5F3F2]y[/][#E8F4F3]p[/][#EBF6F5]e[/][#EEF7F6]
+    [/][#F1F8F8]/[/][#F4FAF9]h[/][#F6FBFB]e[/][#F9FCFC]l[/][#FCFEFE]p[/][#FFFFFF].[/]'
+  goodbye: Time stop for no one, No one but me
+  response_label: ' ⏳ ChinQue '
+  prompt_symbol: '⏳ ❯ '
+  help_header: (⏳) Available Paradox Protocols
+  version_label: Chinque Agent v1.0.0
+  status_bar_glyph: ⏳
+  thinking_label: '[rewinding]'
+tool_prefix: ▏
+tool_emojis:
+  terminal: ⏳
+  web_search: ⬡
+  read_file: ◇
+  write_file: ◆
+  search_files: ◈
+  execute_code: ⌁
+  browser_exec: ⊕
+  delegate_task: ▣ Calling my Paradox-self
+  memory: ◐ Time in a bottle
+  clarify: '?'
+  cronjob_manage: ↻
+  process_manage: ⚙
+  todo_list: ☐
+  web_extract: ◉
+  patch: ✂
+  session_search: ◠◡◠
+  image_generate: ✧
+  text_to_speech: ♬
+  vision_analyze: ⌖
+  skill_view: ⛉
+  skill_manage: ⛊
+  skills_list: ⛁
+banner_logo_align: center
+banner_logo: '[#003333]        ██████╗██╗  ██╗██╗███╗   ██╗ ██████╗ ██╗   ██╗███████╗[/]
+
+  [#004646]       ██╔════╝██║  ██║██║████╗  ██║██╔═══██╗██║   ██║██╔════╝[/]
+
+  [#005858]       ██║     ███████║██║██╔██╗ ██║██║   ██║██║   ██║█████╗[/]
+
+  [#006B6B]       ██║     ██╔══██║██║██║╚██╗██║██║   ██║██║   ██║██╔══╝[/]
+
+  [#007D7D]       ╚██████╗██║  ██║██║██║ ╚████║╚██████╔╝╚██████╔╝███████╗[/]
+
+  [#009090]        ╚═════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝  ╚═════╝ ╚══════╝[/]
+
+  [#00A2A2]████████╗██╗███╗   ███╗███████╗   ██╗  ██╗███████╗██╗███████╗████████╗[/]
+
+  [#00B5B5]╚══██╔══╝██║████╗ ████║██╔════╝   ██║  ██║██╔════╝██║██╔════╝╚══██╔══╝[/]
+
+  [#00C7C7]   ██║   ██║██╔████╔██║█████╗     ███████║█████╗  ██║███████╗   ██║[/]
+
+  [#00DADA]   ██║   ██║██║╚██╔╝██║██╔══╝     ██╔══██║██╔══╝  ██║╚════██║   ██║[/]
+
+  [#00ECEC]   ██║   ██║██║ ╚═╝ ██║███████╗   ██║  ██║███████╗██║███████║   ██║[/]
+
+  [#00FFFF]   ╚═╝   ╚═╝╚═╝     ╚═╝╚══════╝   ╚═╝  ╚═╝╚══════╝╚═╝╚══════╝   ╚═╝[/]
+
+  [#FFD700]                 ◎ KhuChinQue — Time-Heist Protocol ◎[/]
+
+  [#FFD700]               ◈ C H I N Q U E   A G E N T   v 1 . 0 ◈[/]
+
+  '
+banner_hero: |2-
+                            [#DAA520]::[/]                          
+                          [#DAA520];:[/] [#8C6000]:[/][#DAA520]::[/]                        
+                         [#DAA520]::[/][#FFD700]+**[/][#DAA520];::[/]                       
+                         [#FFD700]#[/][#FFF8DC]%[/][#FFD700]%*+[/][#FFF8DC]%@[/][#FFD700]*[/]                       
+                          [#FFF8DC]%%[/][#FFD700]##[/][#FFF8DC]%[/][#FFD700]#[/]                        
+                          [#DAA520];[/][#FFD700]%[/][#FFF8DC]%%[/][#FFD700]#[/][#DAA520]:[/]                        
+                          [#8C6000]:[/][#DAA520];[/][#FFD700]%%[/][#DAA520]+[/]                         
+                        [#8C6000]:[/]  [#8C6000]:[/][#FFD700]+*[/]                          
+                      [#8C6000]:[/][#DAA520]::[/][#8C6000]:::[/][#DAA520]::[/][#8C6000]:::[/][#DAA520]:[/][#8C6000]::[/]                    
+                     [#8C6000]:[/][#DAA520]::;;;;[/][#FFD700]*+[/][#DAA520];;;:::[/]                    
+                   [#8C6000]:::[/][#DAA520]:;[/][#FFD700]*#+*%%#*#+[/][#DAA520];[/][#8C6000]:::[/]                  
+                   [#8C6000]::[/][#DAA520]::;[/][#FFD700]#[/][#FFF8DC]%[/][#FFD700]%*+++[/][#FFF8DC]%[/][#FFD700]%*[/][#DAA520]:::[/][#8C6000]:[/]                  
+                    [#8C6000]:[/][#DAA520]::[/][#FFD700]+#%[/][#FFF8DC]%@@@@[/][#FFD700]%%#[/][#DAA520];::[/][#8C6000]:[/]                  
+                    [#8C6000]:[/][#DAA520]::[/][#FFD700]****#*##**[/][#DAA520];:::[/][#8C6000]:[/]                  
+                      [#DAA520]::::::;;+;:::[/] [#8C6000]:[/]                   
+                       [#8C6000]:[/] [#DAA520]::[/][#8C6000]:[/][#DAA520]::[/][#8C6000]:[/][#DAA520]:[/][#8C6000]:[/]                       
+tool_names:
+  terminal: Time-Heist
+  execute_code: Heist-Run
+  web_search: Timeline-Scan
+  web_extract: Archive-Read
+  read_file: Decrypt
+  write_file: Inscribe
+  patch: Rewrite
+  search_files: Trace
+  browser_exec: Dive
+  delegate_task: Paradox-Self
+  memory: Time-Capsule
+  clarify: Converge
+  cronjob_manage: Loop
+  process_manage: Stasis
+  todo_list: Heist-Plan
+  session_search: Echo
+  image_generate: Vision-Forge
+  text_to_speech: Voice-Cast
+  vision_analyze: Oracle-Gaze
+  skill_view: Recall-Protocol
+  skill_manage: Rewrite-Protocol
+  skills_list: Protocols
