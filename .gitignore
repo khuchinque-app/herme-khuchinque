@@ -23,3 +23,10 @@ state-snapshots/
 .hermes_history
 .update_check
 .backup.lock
+skills/.bundled_manifest
+skills/.curator_ledger.jsonl
+skills/.curator_state
+skills/.usage.json*
+skills/.hub/
+.curator_backups/
+bin/persistence-state.json

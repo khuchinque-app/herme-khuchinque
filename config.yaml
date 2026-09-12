@@ -1,5 +1,5 @@
 model:
-  default: custom/qwen3.8-flash
+  default: qwen3.8-flash
   provider: custom
   base_url: https://api.b.ai/v1
   api_key: ${B_AI_API_KEY}
@@ -8,119 +8,57 @@ model:
     glm5.3-flash: custom/glm5.3-flash
     hy3: custom/hy3
     mimo2.5: custom/mimo2.5
-display:
-  skin: ChinQue
-plugins:
-  enabled: []
-hooks:
-  pre_tool_call:
-    - matcher: terminal
-      command: python3 /home/khuchinque/.hermes/profiles/herme-khuchinque/agent-hooks/ztk-rewrite.py
-      timeout: 10
-hooks_auto_accept: true
+model_aliases:
+  agnes-2.5:
+    model: agnes-2.5-flash
+    provider: custom
+    base_url: https://apihub.agnes-ai.com/v1
+    key_env: AGNES_API_KEY
+  agnes-3.0:
+    model: agnes-3.0-flash
+    provider: custom
+    base_url: https://apihub.agnes-ai.com/v1
+    key_env: AGNES_API_KEY
+web:
+  backend: nous
+browser:
+  cloud_provider: nous
+stt:
+  provider: nous
+_config_version: 42
+image_gen:
+  provider: nous
+video_gen:
+  provider: nous
 onboarding:
   seen:
     openclaw_residue_cleanup: true
-    tool_progress_prompt: true
     busy_input_prompt: true
-_config_version: 40
+    tool_progress_prompt: true
+display:
+  skin: ChinQue
 mcp_servers:
-  anysearch:
-    url: https://api.anysearch.com/mcp
-platform_toolsets:
-  cli:
-    - a2a
-    - browser
-    - clarify
-    - code_execution
-    - computer_use
-    - context_engine
-    - cronjob
-    - delegation
-    - file
-    - homeassistant
-    - image_gen
-    - kanban
-    - memory
-    - session_search
-    - skills
-    - spotify
-    - stt
-    - terminal
-    - todo
-    - tts
-    - video
-    - video_gen
-    - vision
-    - web
-    - x_search
-known_plugin_toolsets:
-  cli:
-    - a2a
-    - spotify
-known_builtin_toolsets:
-  cli:
-    - browser
-    - clarify
-    - code_execution
-    - computer_use
-    - context_engine
-    - cronjob
-    - delegation
-    - discord
-    - discord_admin
-    - file
-    - homeassistant
-    - image_gen
-    - memory
-    - session_search
-    - skills
-    - spotify
-    - stt
-    - terminal
-    - todo
-    - tts
-    - video
-    - video_gen
-    - vision
-    - web
-    - x_search
-    - yuanbao
-
-# ── Security ──────────────────────────────────────────────────────────
-# Secret redaction is ON by default — strings that look like API keys,
-# tokens, and passwords are masked in tool output, logs, and chat
-# responses before the model or user ever sees them. Set redact_secrets
-# to false to disable (e.g. when developing the redactor itself).
-# tirith pre-exec scanning is enabled by default when the tirith binary
-# is available. Configure via security.tirith_* keys or env vars
-# (TIRITH_ENABLED, TIRITH_BIN, TIRITH_TIMEOUT, TIRITH_FAIL_OPEN).
-#
-# security:
-#   redact_secrets: true
-#   tirith_enabled: true
-#   tirith_path: "tirith"
-#   tirith_timeout: 5
-#   tirith_fail_open: true
-
-# ── Fallback Model ────────────────────────────────────────────────────
-# Automatic provider failover when primary is unavailable.
-# Uncomment and configure to enable. Triggers on rate limits (429),
-# overload (529), service errors (503), or connection failures.
-#
-# Supported providers:
-#   openrouter   (OPENROUTER_API_KEY)  — routes to any model
-#   openai-codex (OAuth — hermes auth) — OpenAI Codex
-#   nous         (OAuth — hermes auth) — Nous Portal
-#   zai          (ZAI_API_KEY)         — Z.AI / GLM
-#   kimi-coding  (KIMI_API_KEY)        — Kimi / Moonshot
-#   kimi-coding-cn (KIMI_CN_API_KEY)   — Kimi / Moonshot (China)
-#   minimax      (MINIMAX_API_KEY)     — MiniMax
-#   minimax-cn   (MINIMAX_CN_API_KEY)  — MiniMax (China)
-#   bedrock      (AWS IAM / boto3)     — AWS Bedrock (Converse API)
-#
-# For custom OpenAI-compatible endpoints, add base_url and key_env.
-#
-# fallback_model:
-#   provider: openrouter
-#   model: anthropic/claude-sonnet-4
+  headroom:
+    command: /home/khuchinque/.local/bin/headroom
+    args:
+      - mcp
+      - serve
+    enabled: true
+  codegraph:
+    command: /home/khuchinque/.npm-global/bin/codegraph
+    args:
+      - serve
+      - --mcp
+    timeout: 120
+    connect_timeout: 60
+    enabled: true
+  graphify:
+    command: /home/khuchinque/.local/bin/graphify-mcp
+    enabled: true
+  codebase-memory-mcp:
+    command: "/home/khuchinque/.local/bin/codebase-memory-mcp"
+hooks:
+  pre_llm_call:
+    - command: /home/khuchinque/.hermes/profiles/herme-khuchinque/bin/skill-combo.sh
+      timeout: 10
+hooks_auto_accept: true

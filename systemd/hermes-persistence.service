@@ -1,0 +1,7 @@
+[Unit]
+Description=Hermes Telegram persistence watchdog (herme-khuchinque)
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/lib/hermes-agent/venv/bin/python3 /home/khuchinque/.hermes/profiles/herme-khuchinque/bin/hermes-persistence.py
+TimeoutStartSec=120
