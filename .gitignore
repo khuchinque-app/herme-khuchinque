@@ -6,7 +6,7 @@ sessions/
 cache/
 logs/
 home/
-bin/
+bin/*
 lsp/
 sandboxes/
 pastes/
@@ -31,7 +31,7 @@ skills/.hub/
 .curator_backups/
 bin/persistence-state.json
 
-# but DO track the profile-defined ops tooling:
+# DO track the profile-defined ops tooling:
 !bin/hermes-persistence.py
 !bin/agent-stack-doctor.sh
 !bin/skill-combo.sh
