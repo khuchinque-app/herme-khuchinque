@@ -30,3 +30,10 @@ skills/.usage.json*
 skills/.hub/
 .curator_backups/
 bin/persistence-state.json
+
+# but DO track the profile-defined ops tooling:
+!bin/hermes-persistence.py
+!bin/agent-stack-doctor.sh
+!bin/skill-combo.sh
+!bin/memory-query.sh
+!bin/memory-update.sh
